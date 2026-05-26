@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { use, useState } from 'react';
 import './App.css';
 import temaki from './assets/combo2-sushi.webp';
 import poke from './assets/poke-combo.webp';
@@ -9,13 +9,13 @@ function App() {
 
   const dadosCombo = {
     dupla: {
-      imagem: combo2 - sushi,
+      imagem: temaki,
       titulo: 'Combo duplo',
       preco: 'R$ 87,99',
       descricao: '2 temakis + 1 porção de sushis e sashimis mistos + 1 refrigerante.'
     },
     familia: {
-      imagem: poke - combo,
+      imagem: poke,
       titulo: 'Combo família',
       preco: 'R$ 149,99',
       descricao: '4 pokes (monte o seu) + 2 refrigerantes.'
